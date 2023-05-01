@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css">
 
   <script src="" defer></script>
   <title>Tic Tac Toe</title>
 </head>
+
 <body>
-  <header>
+  <header id="main-header">
     <h1>Play, Tic Tac Toe</h1>
     <p>Build with HTML, CSS, JS and - of course - lots of love!</p>
   </header>
@@ -24,8 +29,8 @@
           <input type="text" name="playername" id="playername">
         </div>
         <div>
-          <button type="button">Cancel</button>
-          <button type="submit">Confirm</button>
+          <button class="btn btn-alt" type="button">Cancel</button>
+          <button class="btn" type="submit">Confirm</button>
         </div>
       </form>
     </aside>
@@ -36,7 +41,7 @@
             <h2>Player 1</h2>
             <h3>PLAYER NAME</h3>
             <p>X</p>
-            <button>Edit</button>
+            <button class="btn btn-alt">Edit</button>
           </article>
         </li>
         <li>
@@ -44,11 +49,11 @@
             <h2>Player 2</h2>
             <h3>PLAYER NAME</h3>
             <p>O</p>
-            <button>Edit</button>
+            <button class="btn btn-alt">Edit</button>
           </article>
         </li>
       </ol>
-      <button id="">Start New Game</button>
+      <button id="" class="btn">Start New Game</button>
     </section>
     <section id="game-field">
       <article>
@@ -74,5 +79,5 @@
   </main>
 
 </body>
-</html>
 
+</html>
