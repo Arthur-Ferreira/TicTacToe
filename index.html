@@ -13,8 +13,11 @@
   <link rel="stylesheet" href="styles/overlays.css">
   <link rel="stylesheet" href="styles/config.css">
   <link rel="stylesheet" href="styles/game.css">
-
-  <script src="" defer></script>
+  
+  <script src="/scripts/config.js" defer></script>
+  <script src="/scripts/game.js" defer></script>
+  <script src="/scripts/app.js" defer></script>
+  
   <title>Tic Tac Toe</title>
 </head>
 
@@ -33,8 +36,8 @@
           <input type="text" name="playername" id="playername">
         </div>
         <div>
-          <button class="btn btn-alt" type="button">Cancel</button>
-          <button class="btn" type="submit">Confirm</button>
+          <button id="cancel-config-btn" class="btn btn-alt" type="button">Cancel</button>
+          <button id="confirm-config-btn" class="btn" type="submit">Confirm</button>
         </div>
       </form>
     </aside>
