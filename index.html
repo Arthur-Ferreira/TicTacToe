@@ -33,10 +33,11 @@
       <form>
         <div class="form-control">
           <label for="playername">Player Name</label>
-          <input type="text" name="playername" id="playername">
+          <input type="text" name="playername" id="playername" required>
         </div>
+        <p id="config-errors"></p>
         <div>
-          <button id="cancel-config-btn" class="btn btn-alt" type="button">Cancel</button>
+          <button id="cancel-config-btn" class="btn btn-alt" type="reset">Cancel</button>
           <button id="confirm-config-btn" class="btn" type="submit">Confirm</button>
         </div>
       </form>
@@ -44,23 +45,23 @@
     <section id="game-config">
       <ol>
         <li>
-          <article>
+          <article id="player-1-data">
             <h2>Player 1</h2>
             <h3>PLAYER NAME</h3>
             <p class="player-symbol">X</p>
-            <button id="edit-player-1-name" class="btn btn-alt">Edit</button>
+            <button id="edit-player-1-name" class="btn btn-alt" data-playerid="1">Edit</button>
           </article>
         </li>
         <li>
-          <article>
+          <article id="player-2-data">
             <h2>Player 2</h2>
             <h3>PLAYER NAME</h3>
             <p class="player-symbol">O</p>
-            <button id="edit-player-2-name" class="btn btn-alt">Edit</button>
+            <button id="edit-player-2-name" class="btn btn-alt" data-playerid="2">Edit</button>
           </article>
         </li>
       </ol>
-      <button id="" class="btn">Start New Game</button>
+      <button id="start-game-btn" class="btn">Start New Game</button>
     </section>
     <section id="game-field">
       <article id="game-over">
@@ -70,17 +71,17 @@
 
       <p>It's your turn <span id="active-player-name">PLAYER NAME</span>!</p>
       <ol id="game-board">
-        <li></li>
-        <li></li>
-        <li></li>
+        <li data-col="1" data-row="1"></li>
+        <li data-col="2" data-row="1"></li>
+        <li data-col="3" data-row="1"></li>
 
-        <li></li>
-        <li></li>
-        <li></li>
+        <li data-col="1" data-row="2"></li>
+        <li data-col="2" data-row="2"></li>
+        <li data-col="3" data-row="2"></li>
 
-        <li></li>
-        <li></li>
-        <li></li>
+        <li data-col="1" data-row="3"></li>
+        <li data-col="2" data-row="3"></li>
+        <li data-col="3" data-row="3"></li>
       </ol>
     </section>
   </main>
